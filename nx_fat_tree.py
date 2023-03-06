@@ -57,8 +57,8 @@ for i in range(n):
     for edge in online_edge:
         #print(edge)
         k +=1
-        if k%100 == 0:
-            print(k)
+        #if k%100 == 0:
+        #    print(k)
         sum1 = len(nx.node_connected_component(H,edge[0]))
         sum2 = len(nx.node_connected_component(H,edge[1]))
         #print(sum1)
