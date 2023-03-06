@@ -1,21 +1,32 @@
 import networkx as nx
+import sys
 import random
 
 max_array = []
 
-for i in range(2):
+n = int(sys.argv[3])
+d = int(sys.argv[1])
+degree = int(sys.argv[2])
+
+node = [pow(degree,i) for i in range(d)]
+nodes = sum(node)
+print(nodes)
+
+#print(sys.argv)
+
+for i in range(n):
 
     G = nx.Graph()
 
-    d = 6
+    #d = 6
     #degree = int(3*d*d)
-    degree = 12
-    print(degree)
+    #degree = 12
+    #print(degree)
     node = [pow(degree,i) for i in range(d)]
     nodes = sum(node)
-    print(nodes)
+    #print(nodes)
 
-    depth = ["a", "b", "c", "d", "e", "f", "g", "h"]
+    depth = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l"]
 
     r = 0
 
