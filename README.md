@@ -8,3 +8,5 @@ The output gives total number of nodes in graph, the max load in each iteration 
 
 
 For symmetric instance with greedy algorithm over the load of vertices, run "python lb_symmetric_instance.py" in the terminal. By default it runs for 1000 iterations and 2^20 nodes. To change the number of nodes to 2^k replace depth in line 8 by value of k. To run a different number of iterations, edit line 9.
+
+The output shows the current iteration number and the frequence of makespan over the iterations.
